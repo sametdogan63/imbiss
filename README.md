@@ -13,8 +13,8 @@ imbiss-website
 │   ├── scripts           # Directory for JavaScript files
 │   │   └── app.js        # Main JavaScript file
 │   └── assets            # Directory for images and media (currently empty)
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
+└── package.json          # npm configuration file
+README.md                 # Project documentation
 ```
 
 ## Getting Started
