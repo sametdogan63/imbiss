@@ -29,6 +29,7 @@
         font-size: 1rem;
         flex-direction: column;
         gap: 0.5rem;
+        text-align: center;
     }
 }
 :root {
@@ -85,7 +86,7 @@ nav {
 }
 
 nav a {
-    color: #ff5722;
+    color: #d32f2f;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -96,13 +97,55 @@ nav a:hover {
 
 
 footer {
-    background-color: #ff5722;
+    background-color: #d32f2f;
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease;
+    position: relative;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+}
+
+.footer-nav a:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -1rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 nav ul {
@@ -137,6 +180,13 @@ main {
     border-radius: 1rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     width: 95%;
+}
+
+#dish-section h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d32f2f;
+    font-size: 1.8rem;
 }
 
 #dishes {
@@ -199,10 +249,69 @@ main {
     margin: 0.5rem 0 0 0;
     color: #444;
 }
-footer {
-    text-align: center;
-    padding: 2.5rem 0 1.5rem 0;
-    color: #fff !important;
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.contact-links a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.contact-links a:hover {
+    color: #ff5722;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease;
+    position: relative;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+}
+
+.footer-nav a:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
     font-size: 1.15rem;
     font-weight: 600;
     background: #d32f2f !important;
