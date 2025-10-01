@@ -17,36 +17,11 @@ imbiss-website
 README.md                 # Project documentation
 ```
 
-## Getting Started
-
-To get started with the project, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd imbiss-website
-   ```
-
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-4. Open `src/index.html` in your web browser to view the website.
-
 ## Features
 
 - Responsive design
 - Interactive elements using JavaScript
 - Custom styles for a unique look
-
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
 ## License
 
