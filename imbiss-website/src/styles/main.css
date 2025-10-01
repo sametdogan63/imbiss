@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #d32f2f;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ff5722;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav li {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    background: #fff;
+    color: #d32f2f;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+nav li.active, nav li:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+#dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dish-card {
+    background: #f1f1f1;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dish-card:hover {
+    transform: scale(1.04);
+    background: #ffe0e0;
+}
+
+.dish-card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    color: #d32f2f;
+}
+
+.dish-card p {
+    margin: 0.5rem 0 0 0;
+    color: #444;
+}
+footer {
+    text-align: center;
+    padding: 2.5rem 0 1.5rem 0;
+    color: #fff !important;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background: #d32f2f !important;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.10);
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: #888;
+    font-size: 0.95rem;
+}
