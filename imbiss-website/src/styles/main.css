@@ -31,6 +31,29 @@
         gap: 0.5rem;
     }
 }
+:root {
+    font-size: 16px; /* Basis-Schriftgröße */
+}
+
+/* Anpassung der Basis-Schriftgröße für verschiedene Bildschirmgrößen */
+@media (max-width: 1200px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -48,6 +71,7 @@ header {
     padding: 1.5rem 0 1rem 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.25rem;
 }
 
 nav {
@@ -109,9 +133,37 @@ main {
 
 #dishes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+}
+
+/* Responsive Grid für verschiedene Bildschirmgrößen */
+@media (max-width: 600px) {
+    /* Smartphones: 1 Gericht pro Zeile */
+    #dishes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Tablets: 2 Gerichte pro Zeile */
+    #dishes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    /* Kleine Desktop: 3 Gerichte pro Zeile */
+    #dishes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1201px) {
+    /* Große Desktop: 4 Gerichte pro Zeile */
+    #dishes {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .dish-card {
