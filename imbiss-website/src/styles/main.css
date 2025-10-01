@@ -148,28 +148,24 @@ main {
 @media (max-width: 600px) {
     /* Smartphones: 1 Gericht pro Zeile */
     #dishes {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(200px, 300px);
+        justify-content: center;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
     /* Tablets: 2 Gerichte pro Zeile */
     #dishes {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(200px, 300px));
+        justify-content: center;
     }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
-    /* Kleine Desktop: 3 Gerichte pro Zeile */
+@media (min-width: 901px) {
+    /* Desktop: 3 Gerichte pro Zeile */
     #dishes {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1201px) {
-    /* Große Desktop: 4 Gerichte pro Zeile */
-    #dishes {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        justify-content: center;
     }
 }
 
