@@ -1,5 +1,5 @@
 /* Responsive Design für mobile Geräte */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     main {
         max-width: 100%;
         margin: 0;
@@ -7,29 +7,44 @@
         box-shadow: none;
         padding: 0.5rem;
     }
-    #dishes {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    
+    header {
+        padding: 1rem 0 0.5rem 0;
+        font-size: 1.1rem;
     }
+    
     .dish-card {
         width: 100%;
         height: auto;
         min-height: 180px;
         font-size: 1rem;
     }
-    header {
-        padding: 1rem 0 0.5rem 0;
-        font-size: 1.1rem;
-    }
+
     footer {
-        padding: 1rem 0 1rem 0;
-        font-size: 1rem;
+        padding: 1rem;
     }
-    .contact-links {
-        font-size: 1rem;
+
+    .footer-content {
         flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        gap: 1rem;
+    }
+
+    .delivery-links {
+        padding: 0.5rem;
+    }
+
+    .delivery-links a {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .contact-item {
+        width: 100%;
     }
 }
 :root {
@@ -204,27 +219,34 @@ main {
 }
 
 /* Responsive Grid für verschiedene Bildschirmgrößen */
+/* Responsive Grid System */
 @media (max-width: 600px) {
-    /* Smartphones: 1 Gericht pro Zeile */
+    /* Smartphones: 1 Spalte */
     #dishes {
-        grid-template-columns: minmax(200px, 300px);
-        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+        padding: 0 0.5rem;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    /* Tablets: 2 Gerichte pro Zeile */
+    /* Tablets: 2 Spalten */
     #dishes {
-        grid-template-columns: repeat(2, minmax(200px, 300px));
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+        padding: 0 1rem;
     }
 }
 
 @media (min-width: 901px) {
-    /* Desktop: 3 Gerichte pro Zeile */
+    /* Desktop: 3 Spalten */
     #dishes {
-        grid-template-columns: repeat(3, minmax(200px, 300px));
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 2rem 0;
+        padding: 0;
     }
 }
 
