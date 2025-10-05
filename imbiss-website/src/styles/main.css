@@ -182,11 +182,19 @@ main {
     width: 95%;
 }
 
-#dish-section h2, #contact h2 {
+#dish-section h2, #contact h2, #order h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #d32f2f;
     font-size: 1.8rem;
+}
+
+.price-notice {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+    font-style: italic;
 }
 
 #dishes {
@@ -221,12 +229,12 @@ main {
 }
 
 .dish-card {
-    background: #f1f1f1;
+    background: #f8f8f8;
     border-radius: 1rem;
     padding: 1.5rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     text-align: center;
-    transition: transform 0.2s;
+    transition: all 0.2s;
     width: 100%;
     min-height: 120px;
     display: flex;
@@ -236,8 +244,9 @@ main {
     box-sizing: border-box;
 }
 .dish-card:hover {
-    transform: scale(1.04);
-    background: #ffe0e0;
+    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .dish-card h3 {
@@ -250,24 +259,95 @@ main {
     color: #444;
 }
 
-.contact-links {
+.delivery-links {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    align-items: stretch;
+    gap: 2rem;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
-.contact-links a {
+.delivery-links a {
     color: #d32f2f;
     text-decoration: none;
     font-weight: 500;
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.delivery-links a:hover {
+    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.delivery-time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f8f8;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-item strong {
+    color: #d32f2f;
+    font-size: 1.1rem;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
-.contact-links a:hover {
-    color: #ff5722;
+.contact-item a:hover {
+    color: #d32f2f;
+}
+
+.contact-item address,
+.contact-item p {
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
 }
 
 .footer-content {
